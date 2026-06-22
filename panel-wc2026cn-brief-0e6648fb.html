@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>再次回到 世界杯 | 故事叙述</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #f9f8f6;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans SC", sans-serif;
+            color: #1d2a3a;
+            line-height: 1.8;
+            padding: 2.4rem 1.2rem;
+            display: flex;
+            justify-content: center;
+        }
+
+        .page {
+            max-width: 660px;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .quiet-hero {
+            margin-top: 2.8rem;
+            margin-bottom: 4rem;
+            border-bottom: 1px solid #e5e0d6;
+            padding-bottom: 2.8rem;
+        }
+
+        .quiet-hero .small-label {
+            font-size: 0.8rem;
+            letter-spacing: 0.08em;
+            color: #8e8a80;
+            text-transform: uppercase;
+            margin-bottom: 0.8rem;
+            font-weight: 400;
+        }
+
+        .quiet-hero h1 {
+            font-size: 2.6rem;
+            font-weight: 550;
+            letter-spacing: -0.01em;
+            line-height: 1.2;
+            color: #141c26;
+            margin-bottom: 1.2rem;
+        }
+
+        .quiet-hero p {
+            font-size: 1.05rem;
+            color: #3f4a58;
+            max-width: 80%;
+        }
+
+        .story-lead {
+            margin-bottom: 2.6rem;
+            font-size: 1.1rem;
+            color: #2a3746;
+            padding: 1.8rem 0 0.6rem 0;
+            border-top: 1px solid #e8e3da;
+        }
+
+        .story-lead p {
+            margin-bottom: 1.4rem;
+        }
+
+        .feature-list {
+            margin: 2.8rem 0 3rem 0;
+        }
+
+        .feature-item {
+            display: flex;
+            gap: 1.2rem;
+            align-items: flex-start;
+            margin-bottom: 1.8rem;
+            padding: 1.2rem 1.4rem;
+            background: #ffffff;
+            border-radius: 14px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02), 0 1px 2px rgba(0, 0, 0, 0.02);
+            border: 1px solid #eeebe6;
+            transition: box-shadow 0.2s ease;
+        }
+
+        .feature-item:hover {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04), 0 2px 4px rgba(0, 0, 0, 0.02);
+        }
+
+        .feature-num {
+            font-size: 1.2rem;
+            font-weight: 450;
+            color: #b8a48c;
+            min-width: 2rem;
+            line-height: 1.4;
+        }
+
+        .feature-text {
+            flex: 1;
+        }
+
+        .feature-text h3 {
+            font-size: 1.1rem;
+            font-weight: 500;
+            margin-bottom: 0.25rem;
+            color: #1f2b39;
+        }
+
+        .feature-text p {
+            font-size: 0.95rem;
+            color: #566473;
+            margin-bottom: 0;
+        }
+
+        .gentle-closing {
+            margin: 3.6rem 0 2.8rem 0;
+            padding: 2.2rem 1.8rem;
+            background: #f1eee9;
+            border-radius: 18px;
+            border: 1px solid #e3ded5;
+        }
+
+        .gentle-closing p {
+            font-size: 1.02rem;
+            color: #2d3b4b;
+            margin-bottom: 1rem;
+        }
+
+        .gentle-closing p:last-child {
+            margin-bottom: 0;
+        }
+
+        .inline-link {
+            color: #28646e;
+            text-decoration: none;
+            border-bottom: 1px solid #cbd8d4;
+            transition: border-color 0.2s, color 0.2s;
+            font-weight: 450;
+        }
+
+        .inline-link:hover {
+            color: #0e3b42;
+            border-bottom-color: #28646e;
+        }
+
+        .faq-mini {
+            margin: 2rem 0 3rem 0;
+        }
+
+        .faq-mini summary {
+            font-weight: 480;
+            font-size: 0.95rem;
+            color: #364452;
+            cursor: pointer;
+            padding: 0.6rem 0;
+            border-bottom: 1px solid #ece7e0;
+            list-style: none;
+        }
+
+        .faq-mini summary::-webkit-details-marker {
+            display: none;
+        }
+
+        .faq-mini summary::before {
+            content: "▸ ";
+            color: #b0a08e;
+            font-size: 1rem;
+            margin-right: 0.3rem;
+        }
+
+        .faq-mini details[open] summary::before {
+            content: "▾ ";
+        }
+
+        .faq-mini details {
+            margin-bottom: 0.2rem;
+        }
+
+        .faq-mini details div {
+            padding: 0.6rem 0 1rem 1.6rem;
+            font-size: 0.92rem;
+            color: #4f5d6b;
+            border-bottom: 1px solid #f0ebe4;
+        }
+
+        .page-footer {
+            margin-top: 4rem;
+            padding-top: 1.6rem;
+            border-top: 1px solid #e2ddd4;
+            font-size: 0.8rem;
+            color: #868178;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+        }
+
+        @media (max-width: 460px) {
+            body {
+                padding: 1.6rem 1rem;
+            }
+            .quiet-hero h1 {
+                font-size: 2rem;
+            }
+            .quiet-hero p {
+                max-width: 100%;
+            }
+            .feature-item {
+                padding: 1rem 1rem;
+                flex-direction: column;
+                gap: 0.3rem;
+            }
+            .feature-num {
+                min-width: auto;
+            }
+            .gentle-closing {
+                padding: 1.8rem 1.2rem;
+            }
+            .page-footer {
+                flex-direction: column;
+                gap: 0.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <!-- 安静的开场 -->
+        <div class="quiet-hero">
+            <div class="small-label">· 故事再续</div>
+            <h1>你又回到了这里</h1>
+            <p>有些页面值得第二次打开，因为信息在流动，感受也会不同。</p>
+        </div>
+
+        <!-- 承接段落 -->
+        <div class="story-lead">
+            <p>大概两周前，我在一个深夜随手收藏了一个页面，当时只标记了两个字：<strong>世界杯</strong>。后来电脑重启、书签栏堆叠，我几乎忘了它。直到今天整理收藏夹，才又点开。</p>
+            <p>页面没有变，还是那种安静的、不追赶你的风格。可我自己变了——再看同样的文字，忽然读出了之前忽略的细节。原来那个叫 <a href="https://panel-wc2026cn.com" class="inline-link">世界杯</a> 的地方，放的不仅仅是赛事预告。</p>
+            <p>它更像一个容器，把赛程、数据、观点和等待的情绪，都收纳得整整齐齐。如果你也恰好收藏过，不妨再给彼此一次机会。</p>
+        </div>
+
+        <!-- 特点列表，侧重再次发现 -->
+        <div class="feature-list">
+            <div class="feature-item">
+                <div class="feature-num">·</div>
+                <div class="feature-text">
+                    <h3>信息没有噪音</h3>
+                    <p>没有弹窗，没有自动播放。每一行文字都像是朋友发来的消息，干净，直接。</p>
+                </div>
+            </div>
+            <div class="feature-item">
+                <div class="feature-num">·</div>
+                <div class="feature-text">
+                    <h3>收藏夹里的锚点</h3>
+                    <p>你不需要记住网址，只要曾经点过一次“收藏”，它就一直在那里等你回来。</p>
+                </div>
+            </div>
+            <div class="feature-item">
+                <div class="feature-num">·</div>
+                <div class="feature-text">
+                    <h3>节奏由你控制</h3>
+                    <p>想快速浏览就滑屏，想慢慢咀嚼就停驻。页面不会催促，也不会拉扯你的注意力。</p>
+                </div>
+            </div>
+            <div class="feature-item">
+                <div class="feature-num">·</div>
+                <div class="feature-text">
+                    <h3>内容在呼吸</h3>
+                    <p>随着赛事推进，信息会自然更新。你不需要每天刷新，但每次回来，都会发现新的脉络。</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 温和的结尾，带着一点催促但很轻 -->
+        <div class="gentle-closing">
+            <p>如果你只是随手把 <a href="https://panel-wc2026cn.com" class="inline-link">世界杯</a> 丢进了收藏夹，现在或许是个好时机，把它拖到书签栏靠前的位置。</p>
+            <p>不是因为它会跑掉，而是因为有些事情值得被记得更清晰一点。页面本身很安静，但你可以给它一个更显眼的位置。</p>
+            <p style="color:#4f5a66; margin-top:0.8rem;">下一次打开，也许就是开赛的前夜。</p>
+        </div>
+
+        <!-- 极简的 FAQ 摘要，增加层次和实用性，但不喧宾夺主 -->
+        <div class="faq-mini">
+            <details>
+                <summary>这个页面会频繁更新吗？</summary>
+                <div>不会。内容会随赛事阶段补充，但不会变成信息流。更像个安静的笔记本，定期添几页。</div>
+            </details>
+            <details>
+                <summary>我收藏的链接会失效吗？</summary>
+                <div>只要域名不变，链接一直有效。你可以随时通过收藏夹回来，或者记住 <strong>panel-wc2026cn.com</strong> 就好。</div>
+            </details>
+            <details>
+                <summary>为什么叫“故事叙述式”页面？</summary>
+                <div>因为不追求一屏展示所有信息，而是用段落和停顿，让你像翻书一样慢慢进入状态。</div>
+            </details>
+        </div>
+
+        <!-- 页脚，轻量信息 -->
+        <div class="page-footer">
+            <span>话题 · 世界杯 · 持续关注</span>
+            <span>再访 · 收藏 · 如常</span>
+        </div>
+    </div>
+</body>
+</html>
